@@ -4,7 +4,7 @@ const TSLint = require("../fixtures/tslint");
 const chai = require("chai");
 chai.should();
 
-describe.only("tslint-modular/browser", function () {
+describe("tslint-modular/browser", function () {
   it("should not be enforced if module is not used", function () {
     let results = TSLint.run(
       "tslint-modular/node",
@@ -30,10 +30,17 @@ describe.only("tslint-modular/browser", function () {
     );
 
     results.errors.should.deep.equal([]);
+
     results.warnings.should.deep.equal([
       "ban",
       "ban",
       "ban",
+    ]);
+
+    results.warningMessages.should.deep.equal([
+      "Calls to 'window.prompt' are not allowed. Don't use `prompt`. It blocks the execution thread.",
+      "Calls to 'confirm' are not allowed. Don't use `confirm`. It blocks the execution thread.",
+      "Calls to 'alert' are not allowed. Don't use `alert`. It blocks the execution thread.",
     ]);
   });
 });

@@ -42,26 +42,28 @@ exports.run = function (modules, code) {
   // Run TSLint on the code
   linter.lint(path.join(mockProjectDir, "index.ts"), code, config);
 
-  return normalizeResults(linter.getResult());
+  return formatResults(linter.getResult());
 };
 
-function normalizeResults (results) {
+function formatResults (results) {
   // Simplify the results for easier testing
   results.errors = [];
+  results.errorMessages = [];
   results.warnings = [];
+  results.warningMessages = [];
 
   results.failures.sort((a, b) => a.startPosition.position - b.startPosition.position);
 
   for (let failure of results.failures) {
     if (failure.ruleSeverity === "warning") {
       results.warnings.push(failure.ruleName);
+      results.warningMessages.push(failure.failure);
     }
     else {
       results.errors.push(failure.ruleName);
+      results.errorMessages.push(failure.failure);
     }
   }
-
-
 
   return results;
 }
