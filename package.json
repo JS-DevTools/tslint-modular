@@ -1,0 +1,71 @@
+{
+  "name": "tslint-modular",
+  "version": "6.0.0",
+  "description": "Modular TSLint configuration",
+  "keywords": [
+    "tslintconfig",
+    "tslint",
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "enforce",
+    "hint",
+    "lint",
+    "policy",
+    "quality",
+    "simple",
+    "standard",
+    "standard style",
+    "style",
+    "style checker",
+    "style linter",
+    "verify"
+  ],
+  "author": {
+    "name": "James Messinger",
+    "url": "https://jamesmessinger.com"
+  },
+  "homepage": "https://jsdevtools.org/tslint-modular",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JS-DevTools/tslint-modular.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "best-practices",
+    "browser",
+    "node",
+    "style",
+    "test/index.js",
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha && npm run lint",
+    "upgrade": "npm-check -u",
+    "bump": "bump --prompt --tag --push --all",
+    "release": "npm run upgrade && npm test && npm run bump"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.11.1",
+    "eslint-config-modular": "^6.0.0",
+    "glob": "^7.1.3",
+    "mocha": "^5.2.0",
+    "npm-check": "^5.9.0",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2",
+    "version-bump-prompt": "^4.2.2"
+  },
+  "peerDependencies": {
+    "tslint": ">=5.0.0"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
