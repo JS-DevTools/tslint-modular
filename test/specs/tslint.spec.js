@@ -59,4 +59,35 @@ describe("tslint-modular", () => {
       "no-magic-numbers",
     ]);
   });
+
+  /**
+   * This test will fail any time a new rule is added to TSLint.
+   * It forces us to include all new rules in tslint-modular (even if they're disabled).
+   */
+  it("should include all TSLint rules", () => {
+    let allRules = Object.keys(require("tslint/lib/configs/all").rules);
+    let ourRules = getRulesRecursive("tslint-modular");
+
+    for (let rule of allRules) {
+      ourRules.should.contain(rule);
+    }
+  });
 });
+
+function getRulesRecursive (moduleName) {
+  let module = require(moduleName);
+  let rules = [];
+
+  if (module.rules) {
+    rules = rules.concat(Object.keys(module.rules));
+  }
+
+  if (module.extends) {
+    for (let subModule of module.extends) {
+      let subModuleRules = getRulesRecursive(subModule);
+      rules = rules.concat(subModuleRules);
+    }
+  }
+
+  return rules;
+}
