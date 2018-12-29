@@ -14,6 +14,9 @@ module.exports = {
       severity: "warning",
       options: [
         // { name: "Buffer", message: "Use TypedArrays instead of Buffer." },
+
+        { name: ["fs", "exists"], message: "fs.exists() is deprecated. Use fs.stat() or fs.access() instead" },
+
         { name: ["fs", "access"], message: "Use fs.promises.access() insead." },
         { name: ["fs", "appendFile"], message: "Use fs.promises.appendFile() insead." },
         { name: ["fs", "chmod"], message: "Use fs.promises.chmod() insead." },
