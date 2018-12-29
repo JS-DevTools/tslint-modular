@@ -4,8 +4,8 @@ const TSLint = require("../fixtures/tslint");
 const chai = require("chai");
 chai.should();
 
-describe("tslint-modular/browser", function () {
-  it("should not be enforced if module is not used", function () {
+describe("tslint-modular/browser", () => {
+  it("should not be enforced if module is not used", () => {
     let results = TSLint.run(
       "tslint-modular/node",
       `
@@ -18,7 +18,7 @@ describe("tslint-modular/browser", function () {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should warn about alert(), confirm(), and prompt()", function () {
+  it("should warn about alert(), confirm(), and prompt()", () => {
     let results = TSLint.run(
       "tslint-modular/browser",
       `

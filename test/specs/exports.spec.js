@@ -13,20 +13,20 @@ const modules = [].concat(
   glob.sync("*/*.js")
 );
 
-describe("Module exports", function () {
-  describe("index", function () {
+describe("Module exports", () => {
+  describe("index", () => {
     const index = require("../../");
 
-    it("should be an object", function () {
+    it("should be an object", () => {
       expect(index).to.be.an("object");
     });
 
-    it("should extend other modules", function () {
+    it("should extend other modules", () => {
       index.should.have.keys("extends");
       index.extends.should.be.an("array");
     });
 
-    it("should not contain any rules", function () {
+    it("should not contain any rules", () => {
       index.should.not.have.keys("rules");
     });
   });
@@ -35,7 +35,7 @@ describe("Module exports", function () {
     const module = require("../../" + moduleName);
     const rules = Object.keys(module.rules || {});
 
-    describe(moduleName, function () {
+    describe(moduleName, () => {
       it("should be included in the package.json file", () => {
         for (let file of manifest.files) {
           if (file === moduleName) {
@@ -51,20 +51,20 @@ describe("Module exports", function () {
         expect(manifest.files).to.include(moduleName);
       });
 
-      it("should export an object", function () {
+      it("should export an object", () => {
         expect(module).to.be.an("object");
       });
 
-      it("should only contain valid TSLint settings", function () {
+      it("should only contain valid TSLint settings", () => {
         module.should.contain.any.keys("extends", "env", "rules", "parser", "parserOptions");
       });
 
-      it("should contain rules in alphabetical order", function () {
+      it("should contain rules in alphabetical order", () => {
         let sortedRules = rules.slice().sort();
         rules.should.deep.equal(sortedRules);
       });
 
-      it("should have valid settings for each rule", function () {
+      it("should have valid settings for each rule", () => {
         for (let ruleName of rules) {
           let rule = module.rules[ruleName];
 

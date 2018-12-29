@@ -4,8 +4,8 @@ const TSLint = require("../fixtures/tslint");
 const chai = require("chai");
 chai.should();
 
-describe("tslint-modular/best-practices", function () {
-  it("should not be enforced if module is not used", function () {
+describe("tslint-modular/best-practices", () => {
+  it("should not be enforced if module is not used", () => {
     let results = TSLint.run(
       "tslint-modular/browser",
       "Date.now() == Date.now();"
@@ -15,7 +15,7 @@ describe("tslint-modular/best-practices", function () {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/best-practices/bugs", function () {
+  it("should include tslint-modular/best-practices/bugs", () => {
     let results = TSLint.run(
       "tslint-modular/best-practices",
       `
@@ -36,7 +36,7 @@ describe("tslint-modular/best-practices", function () {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/best-practices/maintainability", function () {
+  it("should include tslint-modular/best-practices/maintainability", () => {
     let results = TSLint.run(
       "tslint-modular/best-practices",
       `
@@ -68,7 +68,7 @@ describe("tslint-modular/best-practices", function () {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/best-practices/security", function () {
+  it("should include tslint-modular/best-practices/security", () => {
     let results = TSLint.run(
       "tslint-modular/best-practices",
       `

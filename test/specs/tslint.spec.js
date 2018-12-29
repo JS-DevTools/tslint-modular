@@ -4,12 +4,12 @@ const TSLint = require("../fixtures/tslint");
 const chai = require("chai");
 chai.should();
 
-describe("tslint-modular", function () {
+describe("tslint-modular", () => {
   /**
    * This test just verifies that TSLint runs without errors,
    * which means that all of our modules are syntactically valid
    */
-  it("should run without errors", function () {
+  it("should run without errors", () => {
     let results = TSLint.run(
       "tslint-modular",
       `
@@ -28,7 +28,7 @@ describe("tslint-modular", function () {
   /**
    * This test verifies that TSLint correctly loaded our modules
    */
-  it("should report errors for rule violations", function () {
+  it("should report errors for rule violations", () => {
     let results = TSLint.run(
       "tslint-modular",
       `

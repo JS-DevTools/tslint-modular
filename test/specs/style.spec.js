@@ -4,8 +4,8 @@ const TSLint = require("../fixtures/tslint");
 const chai = require("chai");
 chai.should();
 
-describe("tslint-modular/style", function () {
-  it("should not be enforced if module is not used", function () {
+describe("tslint-modular/style", () => {
+  it("should not be enforced if module is not used", () => {
     let results = TSLint.run(
       "tslint-modular/best-practices",
       `
@@ -24,7 +24,7 @@ describe("tslint-modular/style", function () {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/style/comments", function () {
+  it("should include tslint-modular/style/comments", () => {
     let results = TSLint.run(
       "tslint-modular/style",
       `
@@ -49,7 +49,7 @@ describe("tslint-modular/style", function () {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/style/conventions", function () {
+  it("should include tslint-modular/style/conventions", () => {
     let results = TSLint.run(
       "tslint-modular/style",
       `
@@ -84,7 +84,7 @@ describe("tslint-modular/style", function () {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/style/naming", function () {
+  it("should include tslint-modular/style/naming", () => {
     let results = TSLint.run(
       "tslint-modular/style",
       `
@@ -114,7 +114,7 @@ describe("tslint-modular/style", function () {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/style/syntax", function () {
+  it("should include tslint-modular/style/syntax", () => {
     let results = TSLint.run(
       "tslint-modular/style",
       `
@@ -154,7 +154,7 @@ describe("tslint-modular/style", function () {
     ]);
   });
 
-  it("should include tslint-modular/style/whitespace", function () {
+  it("should include tslint-modular/style/whitespace", () => {
     let results = TSLint.run(
       "tslint-modular/style",
       `
