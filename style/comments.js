@@ -53,7 +53,6 @@ module.exports = {
 
         // Require docs for all public methods of classes
         methods: { privacies: "public", locations: "all" },
-        properties: false,
       }],
     },
 
