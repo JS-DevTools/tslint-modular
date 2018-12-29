@@ -6,6 +6,13 @@
 module.exports = {
   rules: {
     /**
+     * Disallows the comma operator to be used.
+     *
+     * @see https://palantir.github.io/tslint/rules/ban-comma-operator/
+     */
+    "ban-comma-operator": true,
+
+    /**
      * Prefer an interface declaration over a type literal (`type T = { ... }`)
      *
      * @see https://palantir.github.io/tslint/rules/interface-over-type-literal/

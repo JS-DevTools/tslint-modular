@@ -13,13 +13,6 @@ module.exports = {
     "await-promise": true,
 
     /**
-     * Disallows the comma operator to be used.
-     *
-     * @see https://palantir.github.io/tslint/rules/ban-comma-operator/
-     */
-    "ban-comma-operator": true,
-
-    /**
      * Bans “// @ts-ignore” comments from being used.
      *
      * @see https://palantir.github.io/tslint/rules/ban-ts-ignore/
