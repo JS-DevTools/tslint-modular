@@ -184,7 +184,6 @@ describe("tslint-modular/style", () => {
       "typedef-whitespace",
       "one-line",
       "align",
-      "newline-before-return",
     ]);
     results.warnings.should.deep.equal([]);
   });

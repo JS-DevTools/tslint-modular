@@ -66,8 +66,11 @@ module.exports = {
      * Enforces blank line before return when not the only line in the block.
      *
      * @see https://palantir.github.io/tslint/rules/newline-before-return/
+     *
+     * This rule is disabled because a blank line isn't necessary for very short blocks (2 or 3 lines).
+     * I wish this rule had an option for the number of lines in the block.
      */
-    "newline-before-return": true,
+    "newline-before-return": false,
 
     /**
      * Requires that chained method calls be broken apart onto separate lines.
