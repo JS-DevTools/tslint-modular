@@ -127,11 +127,11 @@ module.exports = {
       severity: "default",
       options: [
         {
-          anonymous: "always",
+          anonymous: "never",
           asyncArrow: "always",
-          method: "always",
-          named: "always",
-          constructor: "always",
+          method: "never",
+          named: "never",
+          constructor: "never",
         }
       ]
     },
