@@ -77,18 +77,11 @@ module.exports = {
      * When no list of allowed values is specified, -1, 0 and 1 are allowed by default.
      *
      * @see https://palantir.github.io/tslint/rules/no-magic-numbers/
+     *
+     * This rule is disabled because there are too many exception cases where it's clearer
+     * to use constant number values rather than creating variables.
      */
-    "no-magic-numbers": {
-      severity: "warning",
-      options: [
-        -1,     // indexOf !== -1
-        0,      // .length === 0
-        1,      // .length > 1
-        24,     // hours
-        60,     // seconds, minutes
-        1000,   // milliseconds
-      ]
-    },
+    "no-magic-numbers": false,
 
     /**
      * Disallows mergeable namespaces in the same file.
