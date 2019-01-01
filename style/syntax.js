@@ -251,8 +251,11 @@ module.exports = {
      * Enforces the use of the ES2018 object spread operator over `Object.assign()` where appropriate.
      *
      * @see https://palantir.github.io/tslint/rules/prefer-object-spread/
+     *
+     * This rule is currently disabled because the object spread operator is not supported in Node 6.
+     * TODO: Enable this rule once Node 6 goes out of LTS (April 2019)
      */
-    "prefer-object-spread": true,
+    "prefer-object-spread": false,
 
     /**
      * Prefer a `switch` statement to an `if` statement with simple `===` comparisons.
