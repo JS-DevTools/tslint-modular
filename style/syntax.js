@@ -285,10 +285,10 @@ module.exports = {
      * Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter.
      *
      * @see https://palantir.github.io/tslint/rules/unified-signatures/
+     *
+     * This rule is disabled because it's often more clear to have separate overload signatures.
      */
-    "unified-signatures": {
-      severity: "warning"
-    },
+    "unified-signatures": false,
 
     /**
      * Prevents unnecessary and/or misleading scope bindings on functions.
