@@ -334,13 +334,13 @@ module.exports = {
     typedef: {
       severity: "default",
       options: [
-        "call-signature",
-        "parameter",
         "property-declaration",
         "member-variable-declaration",
 
         // Would like to enable these as well, but they cause conflicts with "no-inferable-types".
         // See https://github.com/palantir/tslint/issues/711
+        // "call-signature",
+        // "parameter",
         // "arrow-call-signature",
         // "arrow-parameter",
         // "variable-declaration",
