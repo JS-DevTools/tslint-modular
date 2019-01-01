@@ -44,7 +44,6 @@ describe("tslint-modular/style", () => {
       "jsdoc-format",
       "no-redundant-jsdoc",
       "comment-format",
-      "comment-format",
     ]);
     results.warnings.should.deep.equal([]);
   });

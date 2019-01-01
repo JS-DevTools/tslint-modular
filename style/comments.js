@@ -14,7 +14,6 @@ module.exports = {
       severity: "default",
       options: [
         "check-space",
-        "check-uppercase"
       ]
     },
 
