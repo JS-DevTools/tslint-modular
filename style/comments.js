@@ -42,16 +42,16 @@ module.exports = {
       severity: "default",
       options: [{
         // Require docs for all exports
-        classes: { visibilities: ["exported"] },
-        enums: { visibilities: ["exported"] },
-        functions: { visibilities: ["exported"] },
-        interfaces: { visibilities: ["exported"] },
-        namespaces: { visibilities: ["exported"] },
-        types: { visibilities: ["exported"] },
-        variables: { visibilities: ["exported"] },
+        classes: { visibilities: ["exported"]},
+        enums: { visibilities: ["exported"]},
+        functions: { visibilities: ["exported"]},
+        interfaces: { visibilities: ["exported"]},
+        namespaces: { visibilities: ["exported"]},
+        types: { visibilities: ["exported"]},
+        variables: { visibilities: ["exported"]},
 
         // Require docs for all public methods of classes
-        methods: { privacies: ["public", "protected"], locations: ["all"] },
+        methods: { privacies: ["public", "protected"], locations: ["all"]},
       }],
     },
 
