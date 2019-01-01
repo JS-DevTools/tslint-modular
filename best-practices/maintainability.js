@@ -94,8 +94,10 @@ module.exports = {
      * Disallows reassigning parameters.
      *
      * @see https://palantir.github.io/tslint/rules/no-parameter-reassignment/
+     *
+     * This rule is disabled because it's often necessary to normalize multi-type parameters.
      */
-    "no-parameter-reassignment": true,
+    "no-parameter-reassignment": false,
 
     /**
      * Disallows importing any submodule.
