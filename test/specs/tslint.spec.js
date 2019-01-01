@@ -13,8 +13,17 @@ describe("tslint-modular", () => {
     let results = TSLint.run(
       "tslint-modular",
       `
+      /**
+       * My Class
+       */
       export class MyClass {
-        public method (x: string): string {
+        /**
+         * My Method
+         *
+         * @param x - my parameter
+         * @returns - my return value
+         */
+        public method(x: string): string {
           return "Hello, " + x;
         }
       }
@@ -33,30 +42,33 @@ describe("tslint-modular", () => {
       "tslint-modular",
       `
       export default class my_class {
-        method1(x) {}
+        method1 (x) {}
 
-        method2() {
-          return 5;
+        method2 () :Number {
+            return 5;
         }
       }
       `
     );
 
     results.errors.should.deep.equal([
+      "completed-docs",
       "no-default-export",
       "class-name",
-      "typedef",
+      "completed-docs",
       "member-access",
       "space-before-function-paren",
-      "typedef",
-      "typedef",
       "member-access",
+      "completed-docs",
       "space-before-function-paren",
+      "typedef-whitespace",
+      "ban-types",
+      "typedef-whitespace",
+      "whitespace",
     ]);
 
     results.warnings.should.deep.equal([
       "no-empty",
-      "no-magic-numbers",
     ]);
   });
 

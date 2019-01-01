@@ -31,7 +31,7 @@ describe("tslint-modular/style", () => {
       /**Does a thing
        * and returns a value
        * @param {string} x - A thing */
-      export function FOO (x: string): boolean {
+      export function Foo(x: string): boolean {
         //does a thing
         return false;
       }
@@ -53,7 +53,7 @@ describe("tslint-modular/style", () => {
     let results = TSLint.run(
       "tslint-modular/style",
       `
-      function foo (x: string[][], y: number = 5): Array<string> {
+      function foo(x: string[][], y: number = 5): Array<string> {
         return x[0].sort(a => { return y });
       }
 
@@ -66,7 +66,8 @@ describe("tslint-modular/style", () => {
 
       let o: Obj = {
         a: true,
-        b: {}
+        b: { d: "hello", e: "world", },
+        c: 5
       }
       `
     );
@@ -78,6 +79,8 @@ describe("tslint-modular/style", () => {
       "semicolon",
       "quotemark",
       "quotemark",
+      "ban-types",
+      "ban-types",
       "trailing-comma",
       "semicolon",
     ]);
@@ -92,10 +95,10 @@ describe("tslint-modular/style", () => {
         name: string;
       }
 
-      export class my_class {
+      class my_class {
         public name: string;
 
-        public constructor (Name: string) {
+        public constructor(Name: string) {
           let string = Name;
           let x_y_z_ = string;
           this.name = x_y_z_;
@@ -122,7 +125,7 @@ describe("tslint-modular/style", () => {
       import fs from "fs";
 
       namespace MyNamespace {
-        async function foo (x: string, y?: string = undefined): Promise<any> {
+        async function foo(x: string, y?: string = undefined): Promise<any> {
           console.log(x, y);
 
           my_label:
@@ -160,7 +163,7 @@ describe("tslint-modular/style", () => {
       `
       import{readFile}from "fs";
 
-         export function foo() :string
+         function foo () :string
            {
           const x = true   ;
         return x;
