@@ -40,12 +40,12 @@ module.exports = {
     "ban-types": {
       severity: "default",
       options: [
-        "- Object",
-        "- Function",
-        "- Boolean",
-        "- Number",
-        "- String",
-        "- Symbol"
+        ["Object", "Use `object` instead."],
+        ["Boolean", "Use `boolean` instead."],
+        ["Number", "Use `number` instead."],
+        ["String", "Use `string` instead."],
+        ["Symbol", "Use `symbol` instead."],
+        ["Function", "Use a specific function type, like `() => void`."],
       ]
     },
 
