@@ -60,6 +60,9 @@ module.exports = {
      * Enforces a certain header comment for all files, matched by a regular expression.
      *
      * @see https://palantir.github.io/tslint/rules/file-header/
+     *
+     * This rule is disabled because it would be too tedious to include a header at the top of
+     * every single file.
      */
     "file-header": false,
 

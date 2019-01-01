@@ -78,6 +78,8 @@ module.exports = {
      * Enforces using explicit += 1 or -= 1 operators.
      *
      * @see https://palantir.github.io/tslint/rules/increment-decrement/
+     *
+     * This rule is disabled because the increment and decrement operators are nice syntax sugar.
      */
     "increment-decrement": false,
 
@@ -189,6 +191,9 @@ module.exports = {
      * object properties together while keeping the elements within each group in alphabetical order.
      *
      * @see https://palantir.github.io/tslint/rules/object-literal-sort-keys/
+     *
+     * This rule is disabled because it's often more clear to group related keys rather than
+     * sorting them alphabetically or as-defined.
      */
     "object-literal-sort-keys": false,
 
@@ -196,6 +201,9 @@ module.exports = {
      * Disallows multiple variable definitions in the same declaration statement.
      *
      * @see https://palantir.github.io/tslint/rules/one-variable-per-declaration/
+     *
+     * This rule is disabled because it's often convenient (and more concise) to combine
+     * varible declarations.
      */
     "one-variable-per-declaration": false,
 
@@ -227,6 +235,9 @@ module.exports = {
      * Requires that variable declarations use `const` instead of `let` and `var` if possible.
      *
      * @see https://palantir.github.io/tslint/rules/prefer-const/
+     *
+     * This rule is disabled because `const` should be reserved for things that represent constant
+     * values, not just any variable that happens to not be reassigned.
      */
     "prefer-const": false,
 

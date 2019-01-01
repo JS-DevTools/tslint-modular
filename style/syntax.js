@@ -265,6 +265,9 @@ module.exports = {
      * Prefer a template expression over string literal concatenation.
      *
      * @see https://palantir.github.io/tslint/rules/prefer-template/
+     *
+     * This rule is disabled because it's often more clear to explicitly concatenate string literals.
+     * Multi-line string templates are also not ideal in some places.
      */
     "prefer-template": false,
 

@@ -17,6 +17,9 @@ module.exports = {
      * or importing specific named exports of the specified modules.
      *
      * @see https://palantir.github.io/tslint/rules/import-blacklist/
+     *
+     * This rule is currently disabled because there are no modules to blacklist yet.
+     * But there may be some that are blacklisted for security reasons at some point.
      */
     "import-blacklist": false,
 

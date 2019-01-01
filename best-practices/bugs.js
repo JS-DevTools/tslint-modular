@@ -16,6 +16,9 @@ module.exports = {
      * Bans “// @ts-ignore” comments from being used.
      *
      * @see https://palantir.github.io/tslint/rules/ban-ts-ignore/
+     *
+     * This rule is disabled because whenever a @ts-ignore comment is needed, it should include
+     * an explanation of why.  I wish there was a TSLint rule to enforce that.
      */
     "ban-ts-ignore": false,
 
@@ -161,6 +164,9 @@ module.exports = {
      * Disallows non-null assertions using the `!` postfix operator.
      *
      * @see https://palantir.github.io/tslint/rules/no-non-null-assertion/
+     *
+     * This rule is disabled because there are many cases where TypeScript is unable to
+     * determine that a value is non-null.
      */
     "no-non-null-assertion": false,
 
