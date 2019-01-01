@@ -228,8 +228,10 @@ module.exports = {
      * Recommends to use a conditional expression instead of assigning to the same thing in each branch of an if statement.
      *
      * @see https://palantir.github.io/tslint/rules/prefer-conditional-expression/
+     *
+     * This rule is disabled because an `if...else` statement is often clearer than a conditional expression.
      */
-    "prefer-conditional-expression": true,
+    "prefer-conditional-expression": false,
 
     /**
      * Requires that variable declarations use `const` instead of `let` and `var` if possible.
