@@ -295,7 +295,7 @@ module.exports = {
       severity: "default",
       options: [{
         esSpecCompliant: true,
-        multiline: "always",
+        multiline: "ignore",
         singleline: "never"
       }],
     },
