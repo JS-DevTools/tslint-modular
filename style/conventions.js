@@ -217,8 +217,8 @@ module.exports = {
       options: [
         {
           "import-sources-order": "case-insensitive",
-          "grouped-imports": true,
-          "named-imports-order": "lowercase-first",
+          "grouped-imports": false,
+          "named-imports-order": "case-insensitive",
           "module-source-path": "full"
         }
       ]
