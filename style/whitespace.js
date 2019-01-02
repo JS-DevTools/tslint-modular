@@ -76,8 +76,11 @@ module.exports = {
      * Requires that chained method calls be broken apart onto separate lines.
      *
      * @see https://palantir.github.io/tslint/rules/newline-per-chained-call/
+     *
+     * This rule is disabled because simple chains look better on one line.
+     * (e.g. "name.trim().toLowerCase()")
      */
-    "newline-per-chained-call": true,
+    "newline-per-chained-call": false,
 
     /**
      * Disallows one or more blank lines in a row.
