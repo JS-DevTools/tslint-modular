@@ -330,22 +330,11 @@ module.exports = {
      * Requires type definitions to exist.
      *
      * @see https://palantir.github.io/tslint/rules/typedef/
+     *
+     * This rule is disabled because it conflicts with "no-inferable-types".
+     * See https://github.com/palantir/tslint/issues/711
      */
-    typedef: {
-      severity: "default",
-      options: [
-        "property-declaration",
-        "member-variable-declaration",
-
-        // Would like to enable these as well, but they cause conflicts with "no-inferable-types".
-        // See https://github.com/palantir/tslint/issues/711
-        // "call-signature",
-        // "parameter",
-        // "arrow-call-signature",
-        // "arrow-parameter",
-        // "variable-declaration",
-      ]
-    },
+    typedef: false,
 
     /**
      * Prevents blank constructors, as they are redundant.
