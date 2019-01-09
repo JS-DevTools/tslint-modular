@@ -228,8 +228,10 @@ module.exports = {
      * Disallows usage of variables before their declaration.
      *
      * @see https://palantir.github.io/tslint/rules/no-use-before-declare/
+     *
+     * This rule is disabled because it voilates the Clean Code "newspaper order" principle.
      */
-    "no-use-before-declare": true,
+    "no-use-before-declare": false,
 
     /**
      * Requires expressions of type `void` to appear in statement position.
