@@ -19,7 +19,7 @@ Related Projects
 
 Installation
 -----------------------
-Run the following [NPM](https://docs.npmjs.com/getting-started/what-is-npm) command to install [TSLint](https://palantir.github.io/tslint/) and `tslint-modular` as dev-dependencies of your project:
+Run the following [npm](https://docs.npmjs.com/about-npm/) command to install [TSLint](https://palantir.github.io/tslint/) and `tslint-modular` as dev-dependencies of your project:
 
 ```bash
 npm install tslint tslint-modular --save-dev
