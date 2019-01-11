@@ -173,7 +173,7 @@ module.exports = {
     "object-literal-key-quotes": {
       severity: "default",
       options: [
-        "consistent-as-needed"
+        "as-needed"
       ]
     },
 
