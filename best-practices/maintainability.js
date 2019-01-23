@@ -59,11 +59,18 @@ module.exports = {
     "no-default-export": true,
 
     /**
-     * Disallows importing default members from certain ES6-style modules.
+     * Don't allow default imports from local modules (e.g. "./foo", "../foo").
+     * DO allow default imports from node_modules (e.g. "foo", "@scope/foo").
+     * DO allow default imports from specific files (e.g. "./data.json", "../styles.css")
      *
      * @see https://palantir.github.io/tslint/rules/no-default-import/
      */
-    "no-default-import": true,
+    "no-default-import": {
+      severity: "default",
+      options: [{
+        fromModules: "^\\..*\\/[^.]+$"
+      }]
+    },
 
     /**
      * Disallows multiple import statements from the same module.
