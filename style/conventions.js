@@ -94,7 +94,7 @@ module.exports = {
         limit: 120,
 
         // Don't enforce line limit for import/export statements, class inheritance lines, or inline comments
-        "ignore-pattern": "(^import |^export |class \w+ (extends|implements) |// )"
+        "ignore-pattern": "(^import |^export |class \w+ (extends|implements) |// |@see |https?:\/\/)"
       }],
     },
 
