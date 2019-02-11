@@ -125,7 +125,12 @@ module.exports = {
      *
      * @see https://palantir.github.io/tslint/rules/no-implicit-dependencies/
      */
-    "no-implicit-dependencies": true,
+    "no-implicit-dependencies": {
+      severity: "default",
+      options: [
+        "dev"   // Allow importing type definitions from devDependencies
+      ]
+    },
 
     /**
      * Avoid import statements with side-effect.
