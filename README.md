@@ -13,6 +13,8 @@ Modular TSLint Configuration
 
 Each module defines rules that are meant to be reasonable defaults and best practices, but you can easily extend or override any of the rules to suit your needs.
 
+
+
 Related Projects
 -----------------------
 - [eslint-config-modular](https://www.npmjs.com/package/eslint-config-modular) - Modular ESLint configuration
@@ -24,6 +26,8 @@ Run the following [npm](https://docs.npmjs.com/about-npm/) command to install [T
 ```bash
 npm install tslint tslint-modular --save-dev
 ```
+
+
 
 Usage
 -----------------------
@@ -44,6 +48,8 @@ extends:
 rules:
   # You can override or extend the rules here
 ```
+
+
 
 Modules
 -----------------------
