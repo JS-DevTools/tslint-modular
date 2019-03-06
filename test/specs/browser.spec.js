@@ -22,9 +22,9 @@ describe("tslint-modular/browser", () => {
     let results = TSLint.run(
       "tslint-modular/browser",
       `
-      var name = window.prompt("What's your name?");
-      if (confirm("Are you sure it's " + name)) {
-        alert("hello, " + name);
+      var answer = window.prompt("What's your name?");
+      if (confirm("Are you sure it's " + answer)) {
+        alert("hello, " + answer);
       }
       `
     );

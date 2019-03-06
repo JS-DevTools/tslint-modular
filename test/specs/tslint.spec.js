@@ -75,6 +75,10 @@ describe("tslint-modular", () => {
   /**
    * This test will fail any time a new rule is added to TSLint.
    * It forces us to include all new rules in tslint-modular (even if they're disabled).
+   *
+   * @see https://github.com/palantir/tslint/blob/master/src/configs/all.ts
+   * @see https://github.com/palantir/tslint/blob/master/CHANGELOG.md
+   * @see https://palantir.github.io/tslint/rules/
    */
   it("should include all TSLint rules", () => {
     let allRules = Object.keys(require("tslint/lib/configs/all").rules);
