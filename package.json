@@ -48,22 +48,22 @@
     "lint": "eslint .",
     "test": "mocha && npm run lint",
     "upgrade": "npm-check -u",
-    "bump": "bump --prompt --tag --push --all",
+    "bump": "bump --tag --push --all",
     "release": "npm run upgrade && npm test && npm run bump"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
-    "@types/node": "^11.10.4",
+    "@types/node": "^11.12.2",
     "chai": "^4.1.2",
-    "eslint": "^5.15.1",
+    "eslint": "^5.16.0",
     "eslint-config-modular": "^7.0.0",
     "glob": "^7.1.3",
     "mocha": "^6.0.2",
     "npm-check": "^5.9.0",
-    "tslint": "^5.13.1",
-    "typescript": "^3.3.3333",
-    "version-bump-prompt": "^4.3.0"
+    "tslint": "^5.14.0",
+    "typescript": "^3.4.1",
+    "version-bump-prompt": "^5.0.0"
   },
   "peerDependencies": {
     "tslint": ">=5.0.0"
