@@ -311,6 +311,15 @@ module.exports = {
     "type-literal-delimiter": true,
 
     /**
+     * Disallows `else` blocks for `if` blocks that end with `break`, `continue`, `return`, or `throw`.
+     *
+     * @see https://palantir.github.io/tslint/rules/unnecessary-else/
+     *
+     * This rule is disabled because `if...else` can make code more readable and the intent more obvious.
+     */
+    "unnecessary-else": false,
+
+    /**
      * Warns if an explicitly specified type argument is the default for that type parameter.
      *
      * @see https://palantir.github.io/tslint/rules/use-default-type-parameter/

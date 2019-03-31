@@ -282,6 +282,13 @@ module.exports = {
     "prefer-while": true,
 
     /**
+     * Ban the use of `this` in static methods
+     *
+     * @see https://palantir.github.io/tslint/rules/static-this/
+     */
+    "static-this": true,
+
+    /**
      * Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter.
      *
      * @see https://palantir.github.io/tslint/rules/unified-signatures/

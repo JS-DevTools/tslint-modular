@@ -200,6 +200,13 @@ module.exports = {
     "no-sparse-arrays": true,
 
     /**
+     * Forbids equality tests that are always true or always false
+     *
+     * @see https://palantir.github.io/tslint/rules/no-tautology-expression/
+     */
+    "no-tautology-expression": true,
+
+    /**
      * Warns when a method is used outside of a method call.
      *
      * @see https://palantir.github.io/tslint/rules/no-unbound-method/
