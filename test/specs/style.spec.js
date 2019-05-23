@@ -169,7 +169,7 @@ describe("tslint-modular/style", () => {
       }`
     );
 
-    results.errors.should.deep.equal([
+    results.errors.should.have.same.members([
       "import-spacing",
       "whitespace",
       "whitespace",

@@ -51,7 +51,7 @@ describe("tslint-modular", () => {
       `
     );
 
-    results.errors.should.deep.equal([
+    results.errors.should.have.same.members([
       "completed-docs",
       "no-default-export",
       "class-name",
