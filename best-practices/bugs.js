@@ -176,6 +176,14 @@ module.exports = {
     "no-non-null-assertion": false,
 
     /**
+     * Disallows explicitly declared or implicitly returned union types with both `null` and
+     * `undefined` as members.
+     *
+     * @see https://palantir.github.io/tslint/rules/no-null-undefined-union/
+     */
+    "no-null-undefined-union": true,
+
+    /**
      * Forbids an object literal to appear in a type assertion expression.
      * Casting to `any` or to `unknown` is still allowed.
      *
