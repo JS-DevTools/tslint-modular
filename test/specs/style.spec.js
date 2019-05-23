@@ -179,8 +179,8 @@ describe("tslint-modular/style", () => {
       "align",
       "space-before-function-paren",
       "typedef-whitespace",
-      "whitespace",
       "typedef-whitespace",
+      "whitespace",
       "one-line",
       "align",
     ]);
