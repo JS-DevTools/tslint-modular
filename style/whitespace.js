@@ -14,7 +14,6 @@ module.exports = {
       severity: "default",
       options: [
         "parameters",
-        "arguments",
         "statements",
         "elements",
         "members"
