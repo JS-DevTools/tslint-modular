@@ -327,11 +327,11 @@ module.exports = {
      * Checks whether the final clause of a switch statement ends in `break;`.
      *
      * @see https://palantir.github.io/tslint/rules/switch-final-break/
+     *
+     * This rule is disabled because the final `break` should _not_ be required for the `default` case,
+     * but it _should_ be required if the final case is not `default`.
      */
-    "switch-final-break": {
-      severity: "default",
-      options: ["always"]
-    },
+    "switch-final-break": false,
 
     /**
      * Requires `===` and `!==` in place of `==` and `!=`.
