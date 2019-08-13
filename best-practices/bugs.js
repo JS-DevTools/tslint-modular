@@ -30,6 +30,13 @@ module.exports = {
     forin: true,
 
     /**
+     * Functions marked as `async` must contain an `await` or `return` statement.
+     *
+     * @see https://palantir.github.io/tslint/rules/no-async-without-await/
+     */
+    "no-async-without-await": true,
+
+    /**
      * Disallows bitwise operators.
      *
      * @see https://palantir.github.io/tslint/rules/no-bitwise/
@@ -305,6 +312,19 @@ module.exports = {
      * practice in JavaScript.
      */
     "strict-boolean-expressions": false,
+
+    /**
+     * Don't allow `>`, `<`, `<=`, or `>=` comparisons between objects.
+     *
+     * @see https://palantir.github.io/tslint/rules/strict-comparisons/
+     */
+    "strict-comparisons": {
+      severity: "default",
+      options: [{
+        "allow-object-equal-comparison": true,
+        "allow-string-order-comparison": true,
+      }]
+    },
 
     /**
      * Warns for type predicates that are always true or always false.
