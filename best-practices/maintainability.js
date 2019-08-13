@@ -122,8 +122,11 @@ module.exports = {
      * Requires that private variables are marked as `readonly` if they`re never modified outside of the constructor.
      *
      * @see https://palantir.github.io/tslint/rules/prefer-readonly/
+     *
+     * This rule is currently disabled due to false positives
+     * @see https://github.com/palantir/tslint/issues/3803
      */
-    "prefer-readonly": true,
+    "prefer-readonly": false,
 
   }
 };

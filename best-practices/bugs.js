@@ -218,13 +218,11 @@ module.exports = {
      * Warns when a method is used outside of a method call.
      *
      * @see https://palantir.github.io/tslint/rules/no-unbound-method/
+     *
+     * This rule is currently disabled due to numerous bugs
+     * @see https://github.com/palantir/tslint/issues?utf8=%E2%9C%93&q=is%3Aissue+no-unbound-method
      */
-    "no-unbound-method": {
-      severity: "default",
-      options: [
-        "ignore-static"
-      ]
-    },
+    "no-unbound-method": false,
 
     /**
      * Warns when using an expression of type `any` in a dynamic way.

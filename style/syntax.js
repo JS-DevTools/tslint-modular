@@ -152,8 +152,12 @@ module.exports = {
      * To catch more cases, enable `only-arrow-functions` and `arrow-return-shorthand` too.
      *
      * @see https://palantir.github.io/tslint/rules/no-unnecessary-callback-wrapper/
+     *
+     * This rule is currently disabled because it incorrectly compares function signatures,
+     * which can result in runtime errors
+     * @see https://github.com/palantir/tslint/issues/2430
      */
-    "no-unnecessary-callback-wrapper": true,
+    "no-unnecessary-callback-wrapper": false,
 
     /**
      * Disallows classes that are not strictly necessary.
