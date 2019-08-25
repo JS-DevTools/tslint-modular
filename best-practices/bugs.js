@@ -121,6 +121,13 @@ module.exports = {
     "no-floating-promises": true,
 
     /**
+     * Disallows iterating with a for-in loop.
+     *
+     * @see https://palantir.github.io/tslint/rules/no-for-in/
+     */
+    "no-for-in": true,
+
+    /**
      * Disallows iterating over an array with a for-in loop.
      *
      * @see https://palantir.github.io/tslint/rules/no-for-in-array/
@@ -197,6 +204,13 @@ module.exports = {
      * @see https://palantir.github.io/tslint/rules/no-object-literal-type-assertion/
      */
     "no-object-literal-type-assertion": true,
+
+    /**
+     * Disallows promises that are used as boolean conditions.
+     *
+     * @see https://palantir.github.io/tslint/rules/no-promise-as-boolean/
+     */
+    "no-promise-as-boolean": true,
 
     /**
      * Disallows shadowing variable declarations.
@@ -325,6 +339,15 @@ module.exports = {
         "allow-string-order-comparison": true,
       }]
     },
+
+    /**
+     * Requires explicit `toString()` calls when concatenating non-string values to strings.
+     *
+     * @see https://palantir.github.io/tslint/rules/strict-string-expressions/
+     *
+     * This rule is disabled because it leads to code that is overly verbose and more difficult to read.
+     */
+    "strict-string-expressions": false,
 
     /**
      * Warns for type predicates that are always true or always false.

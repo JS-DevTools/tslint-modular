@@ -20,6 +20,16 @@ module.exports = {
     "interface-over-type-literal": true,
 
     /**
+     * Doesn't allow `void` to be used in union types.
+     *
+     * @see https://palantir.github.io/tslint/rules/invalid-void/
+     *
+     * This rule is disabled because it is useful to define types that can be assigned a function
+     * that returns a value or a function that returns nothing (void).
+     */
+    "invalid-void": false,
+
+    /**
      * Only allows labels in sensible locations.
      *
      * @see https://palantir.github.io/tslint/rules/label-position/
