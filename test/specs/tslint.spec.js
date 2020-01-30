@@ -1,6 +1,6 @@
 "use strict";
 
-const TSLint = require("../fixtures/tslint");
+const TSLint = require("../utils/tslint");
 const chai = require("chai");
 chai.should();
 
