@@ -47,7 +47,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha && npm run lint",
-    "upgrade": "npm-check -u",
+    "upgrade": "npm-check -u && npm audit fix",
     "bump": "bump --tag --push --all",
     "release": "npm run upgrade && npm test && npm run bump"
   },
@@ -67,8 +67,5 @@
   },
   "peerDependencies": {
     "tslint": ">=5.0.0"
-  },
-  "engines": {
-    "node": ">=6"
   }
 }
