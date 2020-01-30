@@ -1,9 +1,10 @@
 Modular TSLint Configuration
 =======================
 
-[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://travis-ci.com/JS-DevTools/tslint-modular)
-[![Build Status](https://api.travis-ci.com/JS-DevTools/tslint-modular.svg?branch=master)](https://travis-ci.com/JS-DevTools/tslint-modular)
+[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://github.com/JS-DevTools/tslint-modular/blob/master/.github/workflows/CI-CD.yaml)
+[![Build Status](https://github.com/JS-DevTools/tslint-modular/workflows/CI-CD/badge.svg)](https://github.com/JS-DevTools/tslint-modular/blob/master/.github/workflows/CI-CD.yaml)
 
+[![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/tslint-modular/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/tslint-modular)
 [![Dependencies](https://david-dm.org/JS-DevTools/tslint-modular/dev-status.svg)](https://david-dm.org/JS-DevTools/tslint-modular?type=dev)
 
 [![npm](https://img.shields.io/npm/v/tslint-modular.svg?maxAge=43200)](https://www.npmjs.com/package/tslint-modular)
@@ -18,6 +19,8 @@ Each module defines rules that are meant to be reasonable defaults and best prac
 Related Projects
 -----------------------
 - [eslint-config-modular](https://www.npmjs.com/package/eslint-config-modular) - Modular ESLint configuration
+
+
 
 Installation
 -----------------------
