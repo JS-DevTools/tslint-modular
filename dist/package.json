@@ -1,0 +1,53 @@
+{
+  "name": "tslint-modular",
+  "version": "X.X.X",
+  "description": "Modular TSLint configuration",
+  "keywords": [
+    "tslintconfig",
+    "tslint",
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "enforce",
+    "hint",
+    "lint",
+    "policy",
+    "quality",
+    "simple",
+    "standard",
+    "standard style",
+    "style",
+    "style checker",
+    "style linter",
+    "verify"
+  ],
+  "author": {
+    "name": "James Messinger",
+    "url": "https://jamesmessinger.com"
+  },
+  "homepage": "https://jstools.dev/tslint-modular",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JS-DevTools/tslint-modular.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "best-practices",
+    "browser",
+    "node",
+    "style",
+    "test",
+    "index.js"
+  ],
+  "dependencies": {
+    "@jsdevtools/tslint-modular": "X.X.X"
+  },
+  "peerDependencies": {
+    "tslint": ">=5.0.0"
+  }
+}
