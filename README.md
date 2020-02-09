@@ -7,8 +7,8 @@ Modular TSLint Configuration
 [![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/tslint-modular/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/tslint-modular)
 [![Dependencies](https://david-dm.org/JS-DevTools/tslint-modular/dev-status.svg)](https://david-dm.org/JS-DevTools/tslint-modular?type=dev)
 
-[![npm](https://img.shields.io/npm/v/tslint-modular.svg?maxAge=43200)](https://www.npmjs.com/package/tslint-modular)
-[![License](https://img.shields.io/npm/l/tslint-modular.svg?maxAge=2592000)](LICENSE)
+[![npm](https://img.shields.io/npm/v/@jsdevtools/tslint-modular.svg?maxAge=43200)](https://www.npmjs.com/package/@jsdevtools/tslint-modular)
+[![License](https://img.shields.io/npm/l/@jsdevtools/tslint-modular.svg?maxAge=2592000)](LICENSE)
 
 TSLint Modular is a set of [configuration presets](https://palantir.github.io/tslint/usage/configuration/#configuration-presets) for [TSLint](https://palantir.github.io/tslint/) that's broken-up into different modules that can be mixed-and-matched to match the needs of your project.
 
