@@ -4,10 +4,10 @@ const TSLint = require("../utils/tslint");
 const chai = require("chai");
 chai.should();
 
-describe("tslint-modular/node", () => {
+describe("@jsdevtools/tslint-modular/node", () => {
   it("should not be enforced if module is not used", () => {
     let results = TSLint.run(
-      "tslint-modular/browser",
+      "@jsdevtools/tslint-modular/browser",
       `
       const fs = require("fs");
       const file = "some-file.txt";
@@ -30,7 +30,7 @@ describe("tslint-modular/node", () => {
 
   it("should warn about fs.exists() and callback versions of fs functions", () => {
     let results = TSLint.run(
-      "tslint-modular/node",
+      "@jsdevtools/tslint-modular/node",
       `
       const fs = require("fs");
       const file = "some-file.txt";

@@ -2,10 +2,10 @@
 
 module.exports = {
   extends: [
-    "tslint-modular/style/comments",
-    "tslint-modular/style/conventions",
-    "tslint-modular/style/naming",
-    "tslint-modular/style/syntax",
-    "tslint-modular/style/whitespace",
+    "@jsdevtools/tslint-modular/style/comments",
+    "@jsdevtools/tslint-modular/style/conventions",
+    "@jsdevtools/tslint-modular/style/naming",
+    "@jsdevtools/tslint-modular/style/syntax",
+    "@jsdevtools/tslint-modular/style/whitespace",
   ]
 };

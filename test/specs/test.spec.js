@@ -4,10 +4,10 @@ const TSLint = require("../utils/tslint");
 const chai = require("chai");
 chai.should();
 
-describe("tslint-modular/test", () => {
+describe("@jsdevtools/tslint-modular/test", () => {
   it("should not be enforced if module is not used", () => {
     let results = TSLint.run(
-      "tslint-modular",
+      "@jsdevtools/tslint-modular",
       `
       describe.only("My test suite", () => {
         it.only("My test", () => {
@@ -23,7 +23,7 @@ describe("tslint-modular/test", () => {
 
   it("should warn about describe.only() and it.only()", () => {
     let results = TSLint.run(
-      "tslint-modular/test",
+      "@jsdevtools/tslint-modular/test",
       `
       describe.only("My test suite", () => {
         it.only("My test", () => {

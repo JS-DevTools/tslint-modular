@@ -1,5 +1,5 @@
 {
-  "name": "tslint-modular",
+  "name": "@jsdevtools/tslint-modular",
   "version": "1.6.1",
   "description": "Modular TSLint configuration",
   "keywords": [

@@ -46,7 +46,7 @@ jobs:
       - name: Link tslint-modular, so TSLint can find it
         run: |
           npm link
-          npm link tslint-modular
+          npm link @jsdevtools/tslint-modular
 
       - name: Run linter
         run: npm run lint

@@ -4,10 +4,10 @@ const TSLint = require("../utils/tslint");
 const chai = require("chai");
 chai.should();
 
-describe("tslint-modular/best-practices", () => {
+describe("@jsdevtools/tslint-modular/best-practices", () => {
   it("should not be enforced if module is not used", () => {
     let results = TSLint.run(
-      "tslint-modular/browser",
+      "@jsdevtools/tslint-modular/browser",
       "Date.now() == Date.now();"
     );
 
@@ -15,9 +15,9 @@ describe("tslint-modular/best-practices", () => {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/best-practices/bugs", () => {
+  it("should include @jsdevtools/tslint-modular/best-practices/bugs", () => {
     let results = TSLint.run(
-      "tslint-modular/best-practices",
+      "@jsdevtools/tslint-modular/best-practices",
       `
       Date.now() == Date.now();
       interface Foo {}
@@ -36,9 +36,9 @@ describe("tslint-modular/best-practices", () => {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/best-practices/maintainability", () => {
+  it("should include best-practices/maintainability", () => {
     let results = TSLint.run(
-      "tslint-modular/best-practices",
+      "@jsdevtools/tslint-modular/best-practices",
       `
       import { readFile } from "fs";
       import { writeFile } from "fs";
@@ -68,9 +68,9 @@ describe("tslint-modular/best-practices", () => {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/best-practices/security", () => {
+  it("should include best-practices/security", () => {
     let results = TSLint.run(
-      "tslint-modular/best-practices",
+      "@jsdevtools/tslint-modular/best-practices",
       `
       eval("x = 5");
       let x = Function("x = 5");

@@ -4,10 +4,10 @@ const TSLint = require("../utils/tslint");
 const chai = require("chai");
 chai.should();
 
-describe("tslint-modular/style", () => {
+describe("@jsdevtools/tslint-modular/style", () => {
   it("should not be enforced if module is not used", () => {
     let results = TSLint.run(
-      "tslint-modular/best-practices",
+      "@jsdevtools/tslint-modular/best-practices",
       `
       /**Does a thing
        * and returns a value */
@@ -24,9 +24,9 @@ describe("tslint-modular/style", () => {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/style/comments", () => {
+  it("should include style/comments", () => {
     let results = TSLint.run(
-      "tslint-modular/style",
+      "@jsdevtools/tslint-modular/style",
       `
       /**Does a thing
        * and returns a value
@@ -48,9 +48,9 @@ describe("tslint-modular/style", () => {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/style/conventions", () => {
+  it("should include style/conventions", () => {
     let results = TSLint.run(
-      "tslint-modular/style",
+      "@jsdevtools/tslint-modular/style",
       `
       function foo(x: string[][], y: number = 5): Array<string> {
         return x[0].sort(a => { return y });
@@ -86,9 +86,9 @@ describe("tslint-modular/style", () => {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/style/naming", () => {
+  it("should include style/naming", () => {
     let results = TSLint.run(
-      "tslint-modular/style",
+      "@jsdevtools/tslint-modular/style",
       `
       interface IClass {
         name: string;
@@ -116,9 +116,9 @@ describe("tslint-modular/style", () => {
     results.warnings.should.deep.equal([]);
   });
 
-  it("should include tslint-modular/style/syntax", () => {
+  it("should include style/syntax", () => {
     let results = TSLint.run(
-      "tslint-modular/style",
+      "@jsdevtools/tslint-modular/style",
       `
       /// <reference path="fs" />
       import fs from "fs";
@@ -156,9 +156,9 @@ describe("tslint-modular/style", () => {
     ]);
   });
 
-  it("should include tslint-modular/style/whitespace", () => {
+  it("should include style/whitespace", () => {
     let results = TSLint.run(
-      "tslint-modular/style",
+      "@jsdevtools/tslint-modular/style",
       `
       import{readFile}from "fs";
 

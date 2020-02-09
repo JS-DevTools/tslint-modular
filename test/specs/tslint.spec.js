@@ -4,14 +4,14 @@ const TSLint = require("../utils/tslint");
 const chai = require("chai");
 chai.should();
 
-describe("tslint-modular", () => {
+describe("@jsdevtools/tslint-modular", () => {
   /**
    * This test just verifies that TSLint runs without errors,
    * which means that all of our modules are syntactically valid
    */
   it("should run without errors", () => {
     let results = TSLint.run(
-      "tslint-modular",
+      "@jsdevtools/tslint-modular",
       `
       /**
        * My Class
@@ -39,7 +39,7 @@ describe("tslint-modular", () => {
    */
   it("should report errors for rule violations", () => {
     let results = TSLint.run(
-      "tslint-modular",
+      "@jsdevtools/tslint-modular",
       `
       export default class my_class {
         method1 (x) {}
@@ -82,7 +82,7 @@ describe("tslint-modular", () => {
    */
   it("should include all TSLint rules", () => {
     let allRules = Object.keys(require("tslint/lib/configs/all").rules);
-    let ourRules = getRulesRecursive("tslint-modular");
+    let ourRules = getRulesRecursive("@jsdevtools/tslint-modular");
 
     for (let rule of allRules) {
       ourRules.should.contain(rule);

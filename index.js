@@ -2,9 +2,9 @@
 
 module.exports = {
   extends: [
-    "tslint-modular/best-practices",
-    "tslint-modular/style",
-    "tslint-modular/browser",
-    "tslint-modular/node",
+    "@jsdevtools/tslint-modular/best-practices",
+    "@jsdevtools/tslint-modular/style",
+    "@jsdevtools/tslint-modular/browser",
+    "@jsdevtools/tslint-modular/node",
   ],
 };
