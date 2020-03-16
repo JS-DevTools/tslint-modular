@@ -7,8 +7,9 @@ Modular TSLint Configuration
 [![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/tslint-modular/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/tslint-modular)
 [![Dependencies](https://david-dm.org/JS-DevTools/tslint-modular/dev-status.svg)](https://david-dm.org/JS-DevTools/tslint-modular?type=dev)
 
-[![npm](https://img.shields.io/npm/v/@jsdevtools/tslint-modular.svg?maxAge=43200)](https://www.npmjs.com/package/@jsdevtools/tslint-modular)
-[![License](https://img.shields.io/npm/l/@jsdevtools/tslint-modular.svg?maxAge=2592000)](LICENSE)
+[![npm](https://img.shields.io/npm/v/@jsdevtools/tslint-modular.svg)](https://www.npmjs.com/package/@jsdevtools/tslint-modular)
+[![License](https://img.shields.io/npm/l/@jsdevtools/tslint-modular.svg)](LICENSE)
+[![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/JS-DevTools/XXXXXXXXXXXXXXXXXXXXXXXXX)
 
 TSLint Modular is a set of [configuration presets](https://palantir.github.io/tslint/usage/configuration/#configuration-presets) for [TSLint](https://palantir.github.io/tslint/) that's broken-up into different modules that can be mixed-and-matched to match the needs of your project.
 
@@ -98,6 +99,15 @@ Enforces **opinionated** whitespace rules, such as [two-space indentation](https
 Warns about `describe.only()` and `it.only()` calls that may have accidentally been left in your test code.
 
 > **Note:** We recommend that you create a separate `tslint.yaml` file in your test folder. That way, it can use different modules and rules than the rest of your codebase.
+
+
+
+License
+--------------------------
+TSLint Modular is 100% free and open-source, under the [MIT license](LICENSE). Use it however you want.
+
+This package is [Treeware](http://treeware.earth). If you use it in production, then we ask that you [**buy the world a tree**](https://plant.treeware.earth/JS-DevTools/tslint-modular) to thank us for our work. By contributing to the Treeware forest you’ll be creating employment for local families and restoring wildlife habitats.
+
 
 
 Big Thanks To
