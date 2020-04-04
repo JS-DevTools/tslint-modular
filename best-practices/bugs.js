@@ -176,8 +176,12 @@ module.exports = {
      * Warns on apparent attempts to define constructors for interfaces or `new` for classes.
      *
      * @see https://palantir.github.io/tslint/rules/no-misused-new/
+     *
+     * This rule is disabled because there are many cases where it is useful or necessary to define
+     * an interface with a constructor. Many of the built-in TypeScript and Node type definitions
+     * use this technique.
      */
-    "no-misused-new": true,
+    "no-misused-new": false,
 
     /**
      * Disallows non-null assertions using the `!` postfix operator.
