@@ -19,7 +19,11 @@ Each module defines rules that are meant to be reasonable defaults and best prac
 
 Related Projects
 -----------------------
-- [eslint-config-modular](https://www.npmjs.com/package/eslint-config-modular) - Modular ESLint configuration
+- [eslint-config-modular](https://jstools.dev/eslint-config-modular)<br>
+  Modular ESLint configuration
+
+- [@jsdevtools/eslint-config](https://jstools.dev/eslint-config)<br>
+  Opinionated JSDevTools ESLint config for JavaScript, TypeScript, and JSX
 
 
 
