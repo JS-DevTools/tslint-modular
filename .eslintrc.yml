@@ -1,5 +1,8 @@
-extends:
-  - "@jsdevtools/modular/best-practices"
-  - "@jsdevtools/modular/style"
-  - "@jsdevtools/modular/es6"
-  - "@jsdevtools/modular/node"
+# ESLint config
+# http://eslint.org/docs/user-guide/configuring
+# https://jstools.dev/eslint-config/
+
+root: true
+extends: "@jsdevtools"
+env:
+  node: true

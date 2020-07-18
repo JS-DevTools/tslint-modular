@@ -77,7 +77,7 @@ describe("Module exports", () => {
             rule.severity.should.be.a("string").and.oneOf(["default", "warning"]);
 
             if (rule.options) {
-              rule.options.should.be.an("array").and.not.empty;
+              rule.options.should.be.an("array").with.length.of.at.least(1);
             }
           }
         }
